@@ -1,31 +1,114 @@
 <!doctype html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Art Gallery</title>
-
   <link rel="stylesheet" href="css/art.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+
 <body>
-<div id="gallery">
+  <!--Navigation bar-->
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <!--end of Navigation bar-->
 
-   <img src="arts/uma1.jpg">
-   <img src="arts/uma2.jpg">
-   <img src="arts/yashiro.jpg">
-   <img src="arts/ryushen.jpg">
-   <img src="arts/deergirl.jpg">
-   <img src="arts/gundam1.jpg">
-   <img src="arts/oc1.jpg">
-   <img src="arts/karma.jpg">
-   <img src="arts/halloween.jpg">
-   <img src="arts/kaito.jpg">
-   <img src="arts/amuro2.jpg">
-   <img src="arts/amuro-char.jpg">
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Jenny Hu's Art Gallary</h1>
+        <p class="lead text-muted">These are some of the arts I have drawn from 2020 to present. Most of them are drawn with CSP or Procreate.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Gallery -->
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="arts/uma1.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
 
+      <img
+        src="arts/uma2.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
 
+      <img
+        src="arts/oc1.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/amuro-char.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="arts/yashiro.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/ryushen.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/karma.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/amuro2.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="arts/deergirl.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/gundam1.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/halloween.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+
+      <img
+        src="arts/kaito.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+      />
+    </div>
   </div>
+  <!-- Gallery -->
 
- </body>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1 copyright">© <script>document.write(new Date().getFullYear());</script> Jenny Hu.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
 </html>

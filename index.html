@@ -3,37 +3,45 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jenny Hu</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="top-container">
+
+
+  <!--Navigation bar-->
+  <script id="replace_with_navbar" src="nav.js"></script>
+  <!--end of Navigation bar-->
+
+  <div class="top-container text-md-center">
     <div class="welcome">
       <h1>I'm Jenny Hu.</h1>
       <h2>Welcome to my personal site!</h2>
     </div>
-    <div class="homepage">
-      <img src="images/homepage.png" alt="homepage-image">
-    </div>
   </div>
 
-  <div class="middle-container">
+
+
+  <div class="middle-container text-md-center">
     <div class="profile">
-      <img src="images/profile-pic.png" alt="" height="150">
+      <img class="php" src="images/profile-pic.png" height="150">
       <h2>Hello.</h2>
       <p class="intro">I'm a second-degree student in computer science at Carleton University.</p>
       <p class="intro">I have a bachelor's degree in accounting at ZUEL.</p>
     </div>
-    <hr>
+
+
     <div class="skills">
       <h2>My Skills.</h2>
       <div class="skill-row">
-        <img class="desktop-img" src="images/desktop.png" alt="">
+        <img class="desktop-img" src="images/desktop.png">
         <h3>Computing</h3>
         <p>I can program in Python, Java, C#, HTML, CSS, and JavaScript.</p>
         <p>
@@ -42,28 +50,67 @@
         <p>
           My first 2D galaxy shooter game built with C# and unity:
         </p>
-        <p>
-          <a class="inner-link" href="game.html">Galaxy Shooter</a>
-        </p>
-        <p>I implemented a web crawler and a search engine using Python, aiming to minimize the runtime and space complexity of the operations.</p>
-        <p>As you can imagine, I made this personal website using HTML and CSS.</p>
-        <p>I also used JavaScript to build some web-based applications with sounds and animations:</p>
-        <p>
-          <a class="inner-link" href="https://jytodolist.herokuapp.com/">Todo List</a>
-        </p>
-        <p>
-          <a class="inner-link" href="https://jennyho5.github.io/Simon-Game/">Simon Game</a>
-        </p>
-        <p>
-          <a class="inner-link" href="https://jennyho5.github.io/Dice-Game/">Dice Game</a>
-        </p>
-        <p>
-          <a class="inner-link" href="https://jennyho5.github.io/Drum-Kit/">Drum Kit</a>
-        </p>
+        <div class="card mb-3 text-md-center">
+          <img src="images/space-shooter-screenshot.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Galaxy Shooter</h5>
+            <p class="card-text">A 2D shooter game made with Unity and C#.</p>
+            <a href="game.html" class="btn btn-secondary">Start</a>
+          </div>
+        </div>
+
+
+        <p>I implemented a web crawler and a search engine using Python, aiming to minimize the runtime and space complexity of the operations. I then re-implemented the search engine’s functionality in Java and applied a GUI application. See their code <a href="https://github.com/JennyHo5/search-engine-1406" class="inner-link">here</a>.</p>
+        <p>As you can imagine, I made this personal website using HTML, CSS, JavaScript and Bootstrap.</p>
+        <p>I also build some web-based applications with full functionalities, sounds and animations:</p>
+
+        <div class="card-group">
+          <div class="card text-md-center" style="width: 18rem;">
+            <img src="images/todo-list-screenshot.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Todo List</h5>
+              <p class="card-text">A web app made with Node.js and MongoDB.</p>
+              <a href="https://jytodolist.herokuapp.com/" class="btn btn-secondary">Start</a>
+            </div>
+          </div>
+
+          <div class="card text-md-center" style="width: 18rem;">
+            <img src="images/simon-game-screenshot.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Simon Game</h5>
+              <p class="card-text">A web simon game made with HTML, CSS and JavaScript.</p>
+              <a href="https://jennyho5.github.io/Simon-Game/" class="btn btn-secondary">Start</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card-group">
+
+          <div class="card text-md-center" style="width: 18rem;">
+            <img src="images/dice-game-screenshot.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Dice Game</h5>
+              <p class="card-text">A web dice game made with HTML, CSS and JavaScript.</p>
+              <a href="https://jennyho5.github.io/Dice-Game//" class="btn btn-secondary">Start</a>
+            </div>
+          </div>
+
+
+          <div class="card text-md-center" style="width: 18rem;">
+            <img src="images/drum-kit-screenshot.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Drum Kit</h5>
+              <p class="card-text">A web drum kit made with HTML, CSS and JavaScript.</p>
+              <a href="https://jennyho5.github.io/Drum-Kit/" class="btn btn-secondary">Start</a>
+            </div>
+          </div>
+        </div>
+
+
         <p>
           Check out my <a class="inner-link" href="https://github.com/JennyHo5">Github</a> if you want to see some of their codes!
         </p>
-
       </div>
       <div class="skill-row">
         <img class="color-palette-img" src="images/color-palette.png" alt="">
@@ -75,25 +122,32 @@
         </p>
       </div>
     </div>
-    <hr>
+
+
     <div class="contact-me">
-      <h2>Get In Touch.</h2>
-      <h3>Feel free to contact me if you have any interest.</h3>
-      <p>
+      <h2 class="text-center">Get In Touch.</h2>
+      <h3 class="text-center">Feel free to contact me if you have any interest.</h3>
+      <p class="text-center">
         Let's grab a coffee sometime :)
       </p>
-      <a class="btn" href="mailto:hujiayu200@gmail.com">CONTACT ME</a>
+      <button type="button" class="btn btn-secondary">Contact Me</button>
     </div>
   </div>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/jiayuhu2000">LinkedIn</a>
-    <a class="footer-link" href="https://github.com/JennyHo5">Github</a>
-    <a class="footer-link" href="https://www.instagram.com/jyhu500">Instagram</a>
-    <a class="footer-link" href="https://jy.montaigne.io/">Blog</a>
-    <p class="copyright">© <script>document.write(new Date().getFullYear());</script> Jenny Hu.</p>
-  </div>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1 copyright">© <script>
+          document.write(new Date().getFullYear());
+        </script> Jenny Hu.</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 
