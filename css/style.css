@@ -30,6 +30,10 @@ p{
   line-height: 2;
 }
 
+.back-to-top {
+  color: #CD5D7D;
+}
+
 
 .top-container{
   position: relative;
@@ -50,11 +54,15 @@ p{
   margin: auto auto 50px auto;
 }
 
-.galaxy-shooter-div {
-  margin: auto;
+.project {
+  width: 70%;
+  margin: auto auto 50px auto;
 }
 
-
+.card-group {
+  width: 70%;
+  margin: auto;
+}
 
 .homepage{
   position: absolute;
